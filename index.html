@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation and Fundraising Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: url('texture-bg.jpg') repeat;
+        }
+        .card-img-top {
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        
+        .card-img-top:hover {
+            transform: scale(1.1); 
+        }
+       .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-toggler {
+            order: 2; /* Move hamburger menu to the right */
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-brand p {
+            margin-left: 10px;
+        }
+
+        /* Hide the navbar toggle button on desktop */
+        @media (min-width: 992px) {
+            .navbar-toggler {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://raw.githubusercontent.com/swapnil05patel/donation-platform/main/logo.png" alt="logo" class="rounded-circle float-left " style="width: 10%;">
+                <p>Donation Platform</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="donation.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Make a Difference Today</h1>
+            <p class="lead">Support campaigns for education, healthcare, and disaster relief</p>
+            <a href="signin.html" class="btn btn-warning">Sign In</a>
+
+        </div>
+    </header>
+    <!-- Campaign Highlights -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/swapnil05patel/donation-platform/main/childeducation.png" class="card-img-top"  alt="Education" >
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="education.html" class="text-decoration-none">Education</a></h5>
+                            <p class="card-text">Support quality education programs for underprivileged children.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/swapnil05patel/donation-platform/main/healthcare.png" class="card-img-top" alt="Healthcare">
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="healthcare.html" class="text-decoration-none">Healthcare</a></h5>
+                            <p class="card-text">Provide medical aid and health facilities to those in need.Helps the needy people for their treatment.Gives good treatment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/swapnil05patel/donation-platform/main/disaster.png" class="card-img-top" alt="Disaster Relief">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="disaster-relief.html" class="text-decoration-none">Disaster Relief</a></h5>
+                            <p class="card-text">Help rebuild lives affected by natural calamities.Support people in the natural calamities like earthqauke,heavy-rainfall,land-slide,flood,etc
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Donation Platform. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
